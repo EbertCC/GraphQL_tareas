@@ -1,0 +1,11 @@
+type Query {
+  welcome: String!
+  getAllProducts: [Product]!
+  getProduct(id: ID!): Product
+}
+
+type Product {
+  id: ID!
+  name: String!
+  price: Int!
+}
